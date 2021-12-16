@@ -1,0 +1,349 @@
+/*General*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  Roboto;
+}
+
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section-title {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 600px;
+    background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hsla(353, 100%, 93%, 0.746), hsla(352, 71%, 77%, 0.514)), url("../img/pexels-pavel-danilyuk-9119919.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, hsla(353, 100%, 93%, 0.746), hsla(352, 71%, 77%, 0.514)), url("../img/pexels-pavel-danilyuk-9119919.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 24px;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+.text-header{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.text-header .header-title{
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/*About Us*/
+.About-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-content img {
+    width: 40%;
+    height: 500px;
+    border-radius: 5px;
+
+    margin: 0 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.about-content .about-content-text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-content .about-content-text h3{
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-content .about-content-text p {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.about-content .about-content-text p span {
+    display: inline-block;
+    background: blueviolet;
+    border-radius: 50%;
+    padding: 5px 3px 3px 5px;
+    color: #fff;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.About-us-container .about-content {
+    display: flex;
+    flex-direction: row;
+}
+/*Services*/
+.service-container {
+    background: #f2f2f2;
+}
+.service-container .container {
+    display: flex;
+    flex-direction: column;
+}
+.service-container .container .services-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.service-container .container .services-content .service {
+    width: 29%;
+}
+.service-container .container .services-content .service .service-img{
+    width: 100%;
+    text-align: center;
+}
+.service-container .container .services-content .service img{
+    width:50%;
+    margin: auto;
+}
+.services-content .service .service-title {
+    text-align: center;
+    margin: 10px 0;
+}
+.services-content .service .service-text p  {
+    text-align: center;
+}
+/*Contact*/
+.contact-container {
+    padding: 40px 0;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hsla(353, 100%, 93%, 0.746), hsla(352, 71%, 77%, 0.514)), url("../img/pexels-karolina-grabowska-4963928.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, hsla(353, 100%, 93%, 0.746), hsla(352, 71%, 77%, 0.514)), url("../img/pexels-karolina-grabowska-4963928.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.contact-content form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.contact-content form input[type="text"],
+.contact-content form input[type="email"],
+.contact-content form textarea{
+    margin: 10px 0;
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: all 300ms;
+    background: transparent;
+    color: #fff;
+}
+.contact-content form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+}
+.contact-content form input[type="text"]:focus,
+.contact-content form input[type="email"]:focus,
+.contact-content form textarea:focus{
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+.contact-content form input[type="text"]:hover,
+.contact-content form input[type="email"]:hover,
+.contact-content form textarea:hover{
+    transform: scale(1.1);
+}
+.contact-content form .to-right{
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+.contact-content form .to-right input[type="submit"] {
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 15px;
+    background: #642a73;
+    color: #fff;
+    transition: all 300ms;
+}
+.contact-content form .to-right input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+input::placeholder {
+    color: #fff;
+    font-size: 1.2em;
+    font-style: italic;
+}
+/*Clients*/
+.clients {
+    background: #f2f2f2;
+}
+.client-content {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.client-content .client{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 32%;
+    height: 200px;
+    padding: 10px 15px;
+    background: #642a73;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.client-content .client .img-container {
+    width: 80%;
+}
+.client-content .client  img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+.client-content .client .client-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    margin-top: 10px;
+}
+/*briefcase*/
+
+.briefcase-images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.briefcase-images .image {
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transition: all 300ms;
+}
+.briefcase-images .image:hover {
+    transform: scale(1.03);
+}
+.briefcase-images .image  > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Footer */
+.footer-container {
+    background: #ee9ca7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 60px;
+}
+.footer-container .footer-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin: 10px 0;
+
+}
+.footer-container .content-foo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}
+.footer-container h2 {
+    color: #fff;
+    margin-top: 25px;
+}
+.footer-container .content-foo p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.footer-container .content-foo .line {
+    display: inline-block;
+    width: 30%;
+    height: 2px;
+    background: #642a73;
+    margin-top: 10px;
+}
